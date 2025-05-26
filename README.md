@@ -1,16 +1,8 @@
-<h1 align="center">Civilian Harm in Ukraine TimeMap</h1>
+<h1 align="center">Social Memory Turkey</h1>
 
 <h2 align="center">
-	Explore it in <a href="https://ukraine.bellingcat.com/">ukraine.bellingcat.com</a>
-	<br/>
-	Download/integrate the data from <a href="https://bellingcat-embeds.ams3.cdn.digitaloceanspaces.com/production/ukr/timemap/api.json">here</a> <small>(regularly updated dataset)</small>
+	A platform for documenting major events, government actions, and civic issues in Turkey
 </h2>
-
-<h3 align="center">
-Read Bellingcat's article about this project in 
-<a href="https://www.bellingcat.com/news/2022/03/17/hospitals-bombed-and-apartments-destroyed-mapping-incidents-of-civilian-harm-in-ukraine/">English (UK)</a>,
-<a href="https://ru.bellingcat.com/novosti/2022/03/18/hospitals-bombed-and-apartments-destroyed-mapping-incidents-of-civilian-harm-in-ukraine-ru/">Русский (Россия)</a>
-</h3>
 
 <p align="center">
 <strong>
@@ -20,7 +12,24 @@ Read Bellingcat's article about this project in
 <br>
 <br>
 
-![ukraine.bellingcat.com timemap preview](docs/example-timemap.png)
+<!-- TODO: Replace this with a Turkey-specific screenshot once available 
+The current image shows a mock-up based on the original template
+-->
+![TimeMap preview](docs/example-timemap.png)
+
+## Project Description
+
+Social Memory Turkey is an interactive platform for chronicling and visualizing major events, government actions, injustices, and civic issues in Turkey. It serves as both a historical record and advocacy tool, documenting incidents in categories including:
+
+- Government oppression
+- Police brutality
+- Unjust court verdicts
+- Media censorship
+- Suppression of protests
+- Human rights violations
+- And other significant events
+
+Users can explore incidents by date, location, and category, gaining insights into patterns and developments over time.
 
 ## Development
 * `npm install` to setup
@@ -30,13 +39,10 @@ Read Bellingcat's article about this project in
 
 
 ## Deployment
-This project is now living in github pages and the API has switched to auto-updated S3 files.
-Access it at https://bellingcat-embeds.ams3.cdn.digitaloceanspaces.com/production/ukr/timemap/api.json
-
 Release with `npm run deploy`. 
 
 ## Contributing
-Please read our [Contribution Guide](./CONTRIBUTING.md) and check our [Issues Page](https://github.com/bellingcat/ukraine-timemap/issues) for desired contributions, and feel free to suggest your own. 
+Please read our [Contribution Guide](./CONTRIBUTING.md) and feel free to suggest your own contributions.
 
 ## Configurations
 
@@ -45,7 +51,7 @@ Please read our [Contribution Guide](./CONTRIBUTING.md) and check our [Issues Pa
 
 * `SERVER_ROOT` - points to the API base address
 * `XXXX_EXT` - points to the respective JSONs of the data, for events, sources, and associations
-* `API_DATA` - S3 file address that can be downloaded or integrated into external apps/visualizations
+* `API_DATA` - data endpoint that can be downloaded or integrated into external apps/visualizations
 * `MAPBOX_TOKEN` - used to load the custom styles
 * `DATE_FMT` and `TIME_FMT` - how to consume the events' date/time from the API
 * `store.app.map` - configures the initial map view and the UX limits

@@ -1,13 +1,13 @@
 const one_day = 1440;
 
 const config = {
-  title: "ukraine",
-  display_title: "Civilian Harm\nin Ukraine",
-  SERVER_ROOT: "https://bellingcat-embeds.ams3.cdn.digitaloceanspaces.com/production/ukr",
-  EVENTS_EXT: "/timemap/events.json",
-  SOURCES_EXT: "/timemap/sources.json",
-  ASSOCIATIONS_EXT: "/timemap/associations.json",
-  API_DATA: "https://bellingcat-embeds.ams3.cdn.digitaloceanspaces.com/production/ukr/timemap/api.json",
+  title: "turkey",
+  display_title: "Social Memory\nTurkey",
+  SERVER_ROOT: "", // TODO: Update with actual data source when available
+  EVENTS_EXT: "/data/events.json", // TODO: Update with actual data source when available
+  SOURCES_EXT: "/data/sources.json", // TODO: Update with actual data source when available
+  ASSOCIATIONS_EXT: "/data/associations.json", // TODO: Update with actual data source when available
+  API_DATA: "", // TODO: Update with actual data API endpoint when available
   MAPBOX_TOKEN:
     "pk.eyJ1IjoiYmVsbGluZ2NhdC1tYXBib3giLCJhIjoiY2tleW0wbWliMDA1cTJ5bzdkbTRraHgwZSJ9.GJQkjPzj8554VhR5SPsfJg",
   // MEDIA_EXT: "/api/media",
@@ -19,7 +19,7 @@ const config = {
       debug: true,
       map: {
         // anchor: [49.02421913, 31.43836003],
-        anchor: [48.3326259, 33.19951447],
+        anchor: [38.9637, 35.2433], // Coordinates for Turkey's center
         maxZoom: 18,
         minZoom: 4,
         startZoom: 6,
@@ -52,7 +52,7 @@ const config = {
           initialDaysShown: 31,
           limits: {
             /** Required. The lower bound of the range that can be accessed on the map. (ISO 8601) */
-            lower: "2022-02-01T00:00:00.000Z",
+            lower: "2013-05-01T00:00:00.000Z", // Starting with Gezi Park protests in 2013
             /**
              * The upper bound of the range that can be accessed on the map.
              * Defaults to current browser time if undefined.
@@ -62,9 +62,9 @@ const config = {
         },
       },
       intro: [
-        '<div class="two-columns"><div class="two-columns_column"><figure><img style="width: 100%; display:block;" src="https://bellingcat-embeds.ams3.cdn.digitaloceanspaces.com/ukraine-timemap/cover01-s.jpg" frameborder="0"><figcaption>Image: Vyacheslav Madiyevskyy/Reuters</figcaption></figure></div><div class="two-columns_column"><figure><img style="width: 100%; display:block;" src="https://bellingcat-embeds.ams3.cdn.digitaloceanspaces.com/ukraine-timemap/cover02-s.jpg" frameborder="0"><figcaption>Image: Järva Teataja/Scanpix Baltics via Reuters</figcaption></figure></div></div>',
-        'This map plots out and highlights incidents that have resulted in potential civilian impact or harm since Russia began its invasion of Ukraine. The incidents detailed have been collected by Bellingcat researchers. Included in the map are instances where civilian areas and infrastructure have been damaged or destroyed, where the presence of civilian injuries are visible and/or there is the presence of immobile civilian bodies. Collection for the incidences contained in this map began on February 24, 2022. Users can explore incidents by date and location. We intend this to be a living project that will continue to be updated as long as the conflict persists. For more detailed information about the entries included in this map, please refer to our methodology and explainer article which can be read <a href="https://www.bellingcat.com/news/2022/03/17/hospitals-bombed-and-apartments-destroyed-mapping-incidents-of-civilian-harm-in-ukraine/" >here</a>.',
-        '<p><b>Editor\'s note</b>: An error in our archiving system between October 21 and November 7 led to some incidents being published on our TimeMap before they were fully verified. We have fixed this issue and are working to verify all extra incidents.</p>',
+        '<!-- TODO: Replace with Turkey-related images -->\n<div class="two-columns"><div class="two-columns_column"><figure><img style="width: 100%; display:block;" src="" frameborder="0"><figcaption>Image: Placeholder</figcaption></figure></div><div class="two-columns_column"><figure><img style="width: 100%; display:block;" src="" frameborder="0"><figcaption>Image: Placeholder</figcaption></figure></div></div>',
+        'This map documents significant social and political events in Turkey related to civil liberties, government actions, and human rights concerns. It includes incidents of government oppression, police brutality, unjust court verdicts, media censorship, suppression of protests, and other human rights violations. The platform serves as a historical record and advocacy tool, chronicling major events and issues affecting Turkish society. Users can explore incidents by date and location. This is intended as a living document that will continue to be updated as new incidents occur.',
+        '<p><b>Note</b>: This project is a work in progress and more events will be added as they are verified and documented.</p>',
       ],
 
       flags: { isInfopoup: false, isCover: false },
@@ -73,38 +73,61 @@ const config = {
         exploreButton: "BACK TO THE PLATFORM",
         description: [
           "## Scope of Research",
-          "This database, organised on Forensic Architecture's [TimeMap](https://github.com/forensic-architecture/timemap) platform and customised for this project, is focused on incidents in Ukraine that have resulted in potential civilian harm. These include: incidents where rockets or missiles struck civilian areas, where attacks have resulted in the destruction of civilian infrastructure, where the presence of civilian injuries are visible and/or the presence of immobile civilian bodies. This database began collection on February 24, 2022 and intends to be a living document that will continue to be updated as long as the conflict persists. While we are attempting to collect as many incidents as possible, we cannot possibly guarantee to collect them all nor will we be able to corroborate the locations of all the incidents we collect. Those we do not corroborate the originality or exact location of will not be shown on the map. Therefore, this map is not an exhaustive list of civilian harm in Ukraine but rather a representation of all incidents which we have been able to collect and of which we have been able to determine the exact locations. ",
-          "## Open Source Footage",
-          "The links in this map are all open source, meaning they are connected to an open link posted online. These sources were collected by Bellingcat researchers and placed in a database from where they are also being archived locally. After collection, our Global Authentication Project members have determined the location of each of these events <small>(you can read more about the Global Authentication Project and its makeup below)</small>. Bellingcat staff then cross-referenced these coordinates to ensure their accuracy. The resolution of these geolocations is within 150 metres of where the incident occurred but the public coordinates viewable on the map have been slightly obscured in order to protect the identity of the creators. Because this footage is open source, the users who uploaded the content are not directly affiliated to Bellingcat or our partners. Any opinions that may be contained within the posts are therefore not those of Bellingcat or our partners. Any claims contained within the posts have also not necessarily been confirmed or verified by Bellingcat, particularly in relation to which party may have been responsible for the incidents detailed.",
-          "## Verification Level",
-          "The data being collected is checked for originality, basic manipulation, and location by Bellingcat investigators. This level of verification is intended to indicate where incidents took place, when and where there are reasonable visual indications of civilian harm. Our investigation plan for the collection of this material and its uses are informed by the [Berkeley Protocol on Digital Open Source Investigations](https://www.ohchr.org/en/publications/policy-and-methodological-publications/berkeley-protocol-digital-open-source). These incidents are also being collected and archived at a [forensic level](https://mnemonic.org/en/our-work) for potential evidentiary use in the future. That level of in-depth analysis and verification will take many months and our goal with this map is to transparently report on the current situation in Ukraine, as it is happening, for public interest. To be clear, these two processes will be separate.",
+          "This database, organised on Forensic Architecture's [TimeMap](https://github.com/forensic-architecture/timemap) platform and customised for this project, is focused on documenting important social and political events in Turkey that have impacts on human rights and civil liberties. These include incidents of government oppression, police brutality, unjust court verdicts, media censorship, suppression of protests, and other human rights violations. The database intends to be a living document that will continue to be updated as new events occur. While we are attempting to collect as many incidents as possible, we cannot possibly guarantee to collect them all. This map is not an exhaustive list of incidents in Turkey but rather a representation of significant events which we have been able to document and verify.",
+          "## Data Sources",
+          "The information in this map comes from varied sources including news reports, social media documentation, NGO reports, and firsthand accounts. The sources are carefully evaluated for reliability and accuracy. After collection, incidents are verified through cross-referencing multiple sources when possible.",
+          "## Verification Process",
+          "The data being collected is checked for accuracy, contextual information, and reliable sourcing. This level of verification is intended to provide a factual basis for understanding patterns of incidents in Turkey. Any claims contained within the sources have been carefully evaluated, though we acknowledge the complexity of fully determining responsibility in some cases.",
+          "## Incident Categories",
+          "Each incident is associated with one or more categories reflecting the type of violation or concern, such as government oppression, police brutality, unjust court verdicts, media censorship, protest suppression, or human rights violations. The categories help to organize and filter the incidents to identify patterns and areas of concern.",
           "## Descriptions",
-          "Each incident is accompanied with source links, the exact location determined by our Global Authentication Project and Bellingcat researchers, as well as a brief description of the incident based on what is visually present. The descriptions indicate what is clearly visible but do not attempt to make assumptions about the exact number of casualties or which party to the conflict is responsible due to those factors being difficult to fully determine from short, visual imagery alone.",
+          "Each incident is accompanied with source links, location information, date and time, and a brief description of what occurred, along with information about responsible parties where this can be reliably determined.",
           "## Filters",
-          "On the left hand side of the map, a user can toggle between different kinds of areas impacted. We are characterising the areas as residential, industrial, administrative, healthcare, school/childcare, military, commercial, religious, or undefined. Decisions on these classifications are  based on  visual evidence in the footage and what the area is reportedly used as. We cannot fully exclude or exhaustively search for the potential of military use in some of these areas.",
-          "## Source Links/Embedding",
-          "We have chosen to embed the social media links directly onto the platform.  Should any be deleted by the uploader, they will still be visible on the map, but data on the post, user and footage will no longer be presented publicly. Where sensitive footage posted by individuals might allow them or their location to be identified, we have sought to preemptively take steps to anonymise these users.",
-          "## Privacy concerns and respect for the dead ",
-          "This footage is graphic and contains distressing scenes of war and conflict. Many of the areas represented are, at time of writing, also under attack both physically and through online attempts to discredit or harm users posting this content. For these reasons, we have chosen not to share certain posts that might indicate the direct identity of any of the persons filming. We have also filtered out posts that contain images where an immobile body is closely filmed and their identity might be ascertained out of respect for them and their close ones.",
-          "## A Note on Bellingcat's Global Authentication Project",
-          "The Global Authentication Project consists of a wide community of open source researchers assisting in Bellingcat research through structured tasks and feedback. Our aim is to authenticate events taking place around the world and fill in the gaps of knowledge that exist, particularly in situations where there are vast quantities of data. In creating a community for those interested in open source research, we are fostering Bellingcat's original aim of solving problems **together**, to diversify our investigations and promote the use of these skills. For this dataset, we are working with many individuals who have Ukrainian language skills and others with local contextual knowledge of the events and places seen on the map. Other participants include individuals skilled in geolocation and chronolocation, with all contributions being vetted by Bellingcat researchers. As we expand the Global Authentication Project in the coming months, more information will be available on our website and Twitter.",
+          "Users can filter incidents by category, time period, or location to focus on specific types of events or patterns across time and space.",
+          "## Privacy and Ethical Considerations",
+          "We are committed to documenting these events while respecting privacy and ethical concerns. Where sensitive information might allow individuals to be identified or put at risk, we have taken steps to protect identities while preserving the factual basis of the incidents.",
           "## Feedback",
-          "This map will continue to change and be updated for the duration of this conflict. We welcome feedback on our methodology,  data collection and take transparency seriously. Should you have any direct feedback about the platform, please indicate it on this [form](https://forms.gle/cV2YAojBoh6h4T3XA).",
+          "This platform will continue to evolve and be updated. We welcome feedback on our methodology and data collection. If you have information about incidents that should be included, corrections to existing entries, or suggestions for improving the platform, please use the contact information provided below.",
         ],
       },
       toolbar: {
         panels: {
           categories: {
-            // TRUE: {
-            //   icon: "public",
-            //   label: "Verified",
-            //   description: "todo",
-            // },
-            // FALSE: {
-            //   icon: "public",
-            //   label: "Unverified",
-            //   description: "todo",
-            // }
+            GOVT_OPPRESSION: {
+              icon: "gavel",
+              label: "Government Oppression",
+              description: "Incidents of state-sanctioned oppression",
+            },
+            POLICE_BRUTALITY: {
+              icon: "local_police",
+              label: "Police Brutality",
+              description: "Incidents of excessive force by police",
+            },
+            UNJUST_VERDICTS: {
+              icon: "balance",
+              label: "Unjust Court Verdicts",
+              description: "Legal decisions that violate justice principles",
+            },
+            MEDIA_CENSORSHIP: {
+              icon: "block",
+              label: "Media Censorship",
+              description: "Suppression of media and information",
+            },
+            PROTEST_SUPPRESSION: {
+              icon: "campaign",
+              label: "Suppression of Protests",
+              description: "Actions against peaceful assembly",
+            },
+            HUMAN_RIGHTS: {
+              icon: "people",
+              label: "Human Rights Violations",
+              description: "Violations of basic human rights",
+            },
+            OTHER: {
+              icon: "more_horiz",
+              label: "Other",
+              description: "Other relevant incidents",
+            }
           },
         },
       },
@@ -145,10 +168,10 @@ const config = {
       },
     },
     features: {
-      USE_CATEGORIES: false,
-      CATEGORIES_AS_FILTERS: false,
-      COLOR_BY_CATEGORY: false,
-      COLOR_BY_ASSOCIATION: true,
+      USE_CATEGORIES: true,
+      CATEGORIES_AS_FILTERS: true,
+      COLOR_BY_CATEGORY: true,
+      COLOR_BY_ASSOCIATION: false,
       USE_ASSOCIATIONS: true,
       USE_FULLSCREEN: true,
       USE_DOWNLOAD: true,
@@ -158,14 +181,27 @@ const config = {
       USE_COVER: true,
       USE_INTRO: false,
       USE_SATELLITE_OVERLAY_TOGGLE: true,
-      USE_SEARCH: false,
+      USE_SEARCH: true,
       USE_SITES: false,
       ZOOM_TO_TIMEFRAME_ON_TIMELINE_CLICK: one_day,
       FETCH_EXTERNAL_MEDIA: false,
       USE_MEDIA_CACHE: false,
       GRAPH_NONLOCATED: false,
       NARRATIVE_STEP_STYLES: false,
-      CUSTOM_EVENT_FIELDS: [],
+      CUSTOM_EVENT_FIELDS: [
+        {
+          key: "responsible_party",
+          kind: "text",
+          label: "Responsible Party",
+          placeholder: "Entity responsible for the incident"
+        },
+        {
+          key: "impact",
+          kind: "text",
+          label: "Impact",
+          placeholder: "Impact of the incident"
+        }
+      ],
     },
   },
 };
