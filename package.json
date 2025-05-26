@@ -1,8 +1,8 @@
 {
-  "name": "timemap",
+  "name": "social-memory-turkey",
   "version": "0.1.0",
-  "description": "",
-  "homepage": "https://bellingcat.github.io/ukraine-timemap",
+  "description": "A platform documenting major events, government actions, and civic issues in Turkey",
+  "homepage": "https://efesenerr.github.io/social-memory-turkey",
   "private": true,
   "engines": {
     "node": "18"
