@@ -12,7 +12,9 @@
 <br>
 <br>
 
-<!-- TODO: Replace this image with a Turkey-specific screenshot once available -->
+<!-- TODO: Replace this with a Turkey-specific screenshot once available 
+The current image shows a mock-up based on the original template
+-->
 ![TimeMap preview](docs/example-timemap.png)
 
 ## Project Description
