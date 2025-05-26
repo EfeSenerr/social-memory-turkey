@@ -1,0 +1,110 @@
+{
+  "tr_srcHidden": {
+    "id": "tr_srcHidden",
+    "paths": ["HIDDEN"],
+    "title": "-",
+    "description": "Source hidden for security reasons"
+  },
+  "tr_src1": {
+    "id": "tr_src1",
+    "paths": ["https://twitter.com/example/status/123456789"],
+    "title": "TR_001",
+    "description": "Video footage of police intervention at Taksim Square protest"
+  },
+  "tr_src2": {
+    "id": "tr_src2",
+    "paths": ["https://www.example-news.com/taksim-protest-police-violence"],
+    "title": "TR_001",
+    "description": "News report on excessive force during peaceful demonstration"
+  },
+  "tr_src3": {
+    "id": "tr_src3",
+    "paths": ["https://www.gazeteduvar.com.tr/journalist-sentenced"],
+    "title": "TR_002",
+    "description": "Court verdict against journalist for corruption reporting"
+  },
+  "tr_src4": {
+    "id": "tr_src4",
+    "paths": ["https://bianet.org/english/freedom-of-expression/journalist-trial"],
+    "title": "TR_002",
+    "description": "Press freedom organization report on journalist sentencing"
+  },
+  "tr_src5": {
+    "id": "tr_src5",
+    "paths": ["https://twitter.com/pressfreedom_tr/status/987654321"],
+    "title": "TR_002",
+    "description": "Social media post documenting court decision"
+  },
+  "tr_src6": {
+    "id": "tr_src6",
+    "paths": ["https://www.hurriyet.com.tr/social-media-blocked"],
+    "title": "TR_003",
+    "description": "Official announcement of social media platform restriction"
+  },
+  "tr_src7": {
+    "id": "tr_src7",
+    "paths": ["https://twitter.com/bogazici_univ/status/567890123"],
+    "title": "TR_004",
+    "description": "University students' documentation of detention during protest"
+  },
+  "tr_src8": {
+    "id": "tr_src8",
+    "paths": ["https://www.cumhuriyet.com.tr/bogazici-students-detained"],
+    "title": "TR_004",
+    "description": "News coverage of student detentions at Boğaziçi University"
+  },
+  "tr_src9": {
+    "id": "tr_src9",
+    "paths": ["https://www.sozcu.com.tr/opposition-politician-arrested"],
+    "title": "TR_005",
+    "description": "Report on opposition politician's arrest on terrorism charges"
+  },
+  "tr_src10": {
+    "id": "tr_src10",
+    "paths": ["https://www.dw.com/tr/turkey-opposition-arrest/article"],
+    "title": "TR_005",
+    "description": "International media coverage of political arrest"
+  },
+  "tr_src11": {
+    "id": "tr_src11",
+    "paths": ["https://kaosgl.org/lgbti-event-banned-izmir"],
+    "title": "TR_006",
+    "description": "LGBTI+ organization's statement on event ban in Izmir"
+  },
+  "tr_src12": {
+    "id": "tr_src12",
+    "paths": ["https://www.barobirlik.org.tr/lawyer-detained"],
+    "title": "TR_007",
+    "description": "Bar Association statement on lawyer detention"
+  },
+  "tr_src13": {
+    "id": "tr_src13",
+    "paths": ["https://twitter.com/ankara_baro/status/456789012"],
+    "title": "TR_007",
+    "description": "Ankara Bar Association's social media post about incident"
+  },
+  "tr_src14": {
+    "id": "tr_src14",
+    "paths": ["https://www.greenpeace.org/turkey/artvin-activists-arrested"],
+    "title": "TR_008",
+    "description": "Environmental organization's report on activist arrests"
+  },
+  "tr_src15": {
+    "id": "tr_src15",
+    "paths": ["https://www.medyascope.tv/program-suspended"],
+    "title": "TR_009",
+    "description": "Media organization's report on TV program suspension"
+  },
+  "tr_src16": {
+    "id": "tr_src16",
+    "paths": ["https://twitter.com/rtuk_tr/status/789012345"],
+    "title": "TR_009",
+    "description": "Official RTÜK announcement of program suspension"
+  },
+  "tr_src17": {
+    "id": "tr_src17",
+    "paths": ["https://www.evrensel.net/women-protest-dispersed"],
+    "title": "TR_010",
+    "description": "Documentation of police intervention at women's rights demonstration"
+  }
+}
