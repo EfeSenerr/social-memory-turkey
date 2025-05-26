@@ -3,11 +3,11 @@ const one_day = 1440;
 const config = {
   title: "turkey",
   display_title: "Social Memory\nTurkey",
-  SERVER_ROOT: "", // TODO: Update with actual data source when available
-  EVENTS_EXT: "/data/events.json", // TODO: Update with actual data source when available
-  SOURCES_EXT: "/data/sources.json", // TODO: Update with actual data source when available
-  ASSOCIATIONS_EXT: "/data/associations.json", // TODO: Update with actual data source when available
-  API_DATA: "", // TODO: Update with actual data API endpoint when available
+  SERVER_ROOT: ".", // TODO: Update with actual data source when available
+  EVENTS_EXT: "/data/tr_events.json", // TODO: Update with actual data source when available
+  SOURCES_EXT: "/data/tr_sources.json", // TODO: Update with actual data source when available
+  ASSOCIATIONS_EXT: "/data/tr_associations.json", // TODO: Update with actual data source when available
+  API_DATA: "/data/tr_api.json", // TODO: Update with actual data API endpoint when available
   MAPBOX_TOKEN:
     "pk.eyJ1IjoiYmVsbGluZ2NhdC1tYXBib3giLCJhIjoiY2tleW0wbWliMDA1cTJ5bzdkbTRraHgwZSJ9.GJQkjPzj8554VhR5SPsfJg",
   // MEDIA_EXT: "/api/media",
@@ -168,10 +168,10 @@ const config = {
       },
     },
     features: {
-      USE_CATEGORIES: true,
-      CATEGORIES_AS_FILTERS: true,
-      COLOR_BY_CATEGORY: true,
-      COLOR_BY_ASSOCIATION: false,
+      USE_CATEGORIES: false,
+      CATEGORIES_AS_FILTERS: false,
+      COLOR_BY_CATEGORY: false,
+      COLOR_BY_ASSOCIATION: true,
       USE_ASSOCIATIONS: true,
       USE_FULLSCREEN: true,
       USE_DOWNLOAD: true,
@@ -181,7 +181,7 @@ const config = {
       USE_COVER: true,
       USE_INTRO: false,
       USE_SATELLITE_OVERLAY_TOGGLE: true,
-      USE_SEARCH: true,
+      USE_SEARCH: false,
       USE_SITES: false,
       ZOOM_TO_TIMEFRAME_ON_TIMELINE_CLICK: one_day,
       FETCH_EXTERNAL_MEDIA: false,
