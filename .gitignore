@@ -19,3 +19,5 @@ src/assets/fonts
 \.DS_Store
 
 tags
+
+infra/
