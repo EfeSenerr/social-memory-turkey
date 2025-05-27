@@ -29,15 +29,14 @@ class Timeline extends Component {
     this.onDragStart = this.onDragStart.bind(this);
     this.onDrag = this.onDrag.bind(this);
     this.onDragEnd = this.onDragEnd.bind(this);
-    this.svgRef = createRef();
-    this.state = {
+    this.svgRef = createRef();    this.state = {
       isFolded:
         searchParams.has("timeline") &&
         searchParams.get("timeline") === "false",
       dims: props.dimensions,
       scaleX: null,
       scaleY: null,
-      timerange: [null, null], // two Dates
+      timerange: props.app?.timeline?.range || [new Date(), new Date()], // Initialize with valid dates or props
       dragPos0: null,
       transitionDuration: 300,
     };
@@ -373,14 +372,17 @@ class Timeline extends Component {
     classes += app.narrative !== null ? " narrative-mode" : "";
     const { dims } = this.state;
     const contentHeight = { height: dims.contentHeight };
-    const { activeCategories: categories } = this.props;
-
-    const title = copy[this.props.app.language].timeline.info.replace(
+    const { activeCategories: categories } = this.props;    const title = copy[this.props.app.language].timeline.info.replace(
       "%n",
       domain.eventCountInTimeRange
     );
-
+    
     const resetTest = copy[this.props.app.language].timeline.reset;
+
+    // Safety check to ensure timerange is valid
+    if (!this.state.timerange || !Array.isArray(this.state.timerange) || this.state.timerange.length !== 2 || !this.state.timerange[0] || !this.state.timerange[1]) {
+      return <div className={classes}>Loading timeline...</div>;
+    }
 
     return (
       <div className={classes} onKeyDown={this.props.onKeyDown} tabIndex="1">
