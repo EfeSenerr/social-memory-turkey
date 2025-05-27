@@ -47,9 +47,8 @@ const config = {
            * Use [start, end] (strings in ISO 8601 format) for a fixed range.
            * Use undefined for a dynamic initial range based on the browser time.
            */
-          initial: undefined,
-          /** The number of days to show when using a dynamic initial range */
-          initialDaysShown: 31,
+          initial: undefined,          /** The number of days to show when using a dynamic initial range */
+          initialDaysShown: 744, // 24 * 31 = 2 years (matching "Zoom to 2 years" level)
           limits: {
             /** Required. The lower bound of the range that can be accessed on the map. (ISO 8601) */
             lower: "2013-05-01T00:00:00.000Z", // Starting with Gezi Park protests in 2013
