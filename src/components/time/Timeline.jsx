@@ -40,19 +40,22 @@ class Timeline extends Component {
       dragPos0: null,
       transitionDuration: 300,
     };
+    
+    // Initialize the initial time range for reset functionality
+    this.initialTimeRange = props.app?.timeline?.range;
   }
 
   componentDidMount() {
     this.addEventListeners();
   }
-
   UNSAFE_componentWillReceiveProps(nextProps) {
     if (hash(nextProps) !== hash(this.props)) {
       this.setState({
         timerange: nextProps.app.timeline.range,
         scaleX: this.makeScaleX(),
       });
-      if(this?.initialTimeRange == null) {
+      // Initialize initialTimeRange if it hasn't been set yet
+      if (!this.initialTimeRange && nextProps.app.timeline.range) {
         this.initialTimeRange = nextProps.app.timeline.range;
       }
     }
@@ -93,8 +96,11 @@ class Timeline extends Component {
       });
     }
   }
-
   makeScaleX() {
+    // Safety check to ensure timerange is valid
+    if (!this.state.timerange || !Array.isArray(this.state.timerange) || this.state.timerange.length !== 2) {
+      return null;
+    }
     return scaleTime()
       .domain(this.state.timerange)
       .range([
@@ -394,14 +400,17 @@ class Timeline extends Component {
             this.onClickArrow();
           }}
           hideInfo={isNarrative}
-          resetTest={resetTest}
-          resetClick={() => {
-            this.setState({
-              timerange: this.initialTimeRange
-            }, () => {
-              this.props.methods.onUpdateTimerange(this.state.timerange);
-            });
-            this.computeDims();
+          resetTest={resetTest}          resetClick={() => {
+            // Ensure we have a valid initial time range to reset to
+            const resetRange = this.initialTimeRange || this.props.app.timeline.range;
+            if (resetRange && Array.isArray(resetRange) && resetRange.length === 2) {
+              this.setState({
+                timerange: resetRange
+              }, () => {
+                this.props.methods.onUpdateTimerange(this.state.timerange);
+              });
+              this.computeDims();
+            }
           }}
         />
         <div className="timeline-content">
