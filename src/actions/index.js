@@ -421,3 +421,10 @@ export function rehydrateState() {
     type: REHYDRATE_STATE,
   };
 }
+
+export const TOGGLE_SEARCH = "TOGGLE_SEARCH";
+export function toggleSearch() {
+  return {
+    type: TOGGLE_SEARCH,
+  };
+}

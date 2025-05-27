@@ -6,21 +6,10 @@ import * as actions from "../../actions";
 
 import SearchRow from "./atoms/SearchRow.jsx";
 
-class Search extends Component {
-  constructor(props) {
+class Search extends Component {  constructor(props) {
     super(props);
 
-    this.state = {
-      isFolded: true,
-    };
-    this.onButtonClick = this.onButtonClick.bind(this);
     this.updateSearchQuery = this.updateSearchQuery.bind(this);
-  }
-
-  onButtonClick() {
-    this.setState((prevState) => {
-      return { isFolded: !prevState.isFolded };
-    });
   }
 
   updateSearchQuery(e) {
@@ -31,17 +20,19 @@ class Search extends Component {
   render() {
     let searchResults;
 
-    const searchAttributes = ["description", "location", "category", "date"];
-
-    if (!this.props.queryString) {
+    const searchAttributes = ["description", "location", "category", "date"];    if (!this.props.queryString) {
       searchResults = [];
     } else {
       searchResults = this.props.events.filter((event) =>
-        searchAttributes.some((attribute) =>
-          event[attribute]
+        searchAttributes.some((attribute) => {
+          const value = event[attribute];
+          // Check if the value exists and is a string or can be converted to string
+          if (value == null) return false;
+          const stringValue = typeof value === 'string' ? value : String(value);
+          return stringValue
             .toLowerCase()
-            .includes(this.props.queryString.toLowerCase())
-        )
+            .includes(this.props.queryString.toLowerCase());
+        })
       );
     }
 
@@ -50,14 +41,9 @@ class Search extends Component {
         className={
           "search-outer-container" +
           (this.props.narrative ? " narrative-mode " : "")
-        }
-      >
-        <div id="search-bar-icon-container" onClick={this.onButtonClick}>
-          <i className="material-icons">search</i>
-        </div>
-        <div
+        }      >        <div
           className={
-            "search-bar-overlay" + (this.state.isFolded ? " folded" : "")
+            "search-bar-overlay" + (this.props.isFolded ? " folded" : "")
           }
         >
           <div className="search-input-container">
@@ -69,15 +55,15 @@ class Search extends Component {
             <i
               id="close-search-overlay"
               className="material-icons"
-              onClick={this.onButtonClick}
+              onClick={this.props.onToggleSearch}
             >
               close
             </i>
-          </div>
-          <div className="search-results">
-            {searchResults.map((result) => {
+          </div><div className="search-results">
+            {searchResults.map((result, index) => {
               return (
                 <SearchRow
+                  key={result.id || index}
                   onSearchRowClick={this.props.onSearchRowClick}
                   eventObj={result}
                   query={this.props.queryString}

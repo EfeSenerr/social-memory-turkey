@@ -95,8 +95,7 @@ const initial = {
         { label: "12 hours", duration: 720 },
         { label: "1 hour", duration: 60 },
       ],
-    },
-    flags: {
+    },    flags: {
       isFetchingDomain: false,
       isFetchingSources: false,
       isCover: true,
@@ -104,6 +103,7 @@ const initial = {
       isInfopopup: false,
       isIntropopup: false,
       isShowingSites: true,
+      isSearch: false,
     },
     cover: {
       title: "project title",

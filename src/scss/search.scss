@@ -19,6 +19,10 @@
   width: 400px;
   position: absolute;
   transition: 0.2s ease;
+
+  &.folded {
+    transform: translateX(-100%);
+  }
 }
 
 .search-bar-input {

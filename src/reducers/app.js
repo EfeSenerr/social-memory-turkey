@@ -24,6 +24,7 @@ import {
   TOGGLE_INTROPOPUP,
   TOGGLE_NOTIFICATIONS,
   TOGGLE_COVER,
+  TOGGLE_SEARCH,
   FETCH_ERROR,
   FETCH_SOURCE_ERROR,
   SET_LOADING,
@@ -255,6 +256,7 @@ const toggleInfoPopup = toggleFlagAC("isInfopopup");
 const toggleIntroPopup = toggleFlagAC("isIntropopup");
 const toggleNotifications = toggleFlagAC("isNotification");
 const toggleCover = toggleFlagAC("isCover");
+const toggleSearch = toggleFlagAC("isSearch");
 
 function fetchSourceError(appState, action) {
   return {
@@ -348,11 +350,12 @@ function app(appState = initial.app, action) {
     case TOGGLE_INFOPOPUP:
       return toggleInfoPopup(appState);
     case TOGGLE_INTROPOPUP:
-      return toggleIntroPopup(appState);
-    case TOGGLE_NOTIFICATIONS:
+      return toggleIntroPopup(appState);    case TOGGLE_NOTIFICATIONS:
       return toggleNotifications(appState);
     case TOGGLE_COVER:
       return toggleCover(appState);
+    case TOGGLE_SEARCH:
+      return toggleSearch(appState);
     /* errors */
     case FETCH_ERROR:
       return fetchError(appState, action);

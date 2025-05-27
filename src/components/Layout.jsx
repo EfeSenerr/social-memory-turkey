@@ -361,13 +361,14 @@ class Dashboard extends Component {
             notifications={domain.notifications}
             onToggle={actions.markNotificationsRead}
           />
-        ) : null}
-        {features.USE_SEARCH && (
+        ) : null}        {features.USE_SEARCH && (
           <Search
             narrative={app.narrative}
             queryString={app.searchQuery}
             events={domain.events}
             onSearchRowClick={this.handleSelect}
+            isFolded={!app.flags.isSearch}
+            onToggleSearch={actions.toggleSearch}
           />
         )}
         {app.source ? (

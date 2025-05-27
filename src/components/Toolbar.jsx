@@ -334,9 +334,16 @@ class Toolbar extends Component {
                   panels.download.label,
                   panels.download.icon
                 )
-              : null}
-            {features.USE_FULLSCREEN && (
+              : null}            {features.USE_FULLSCREEN && (
               <FullscreenToggle language={this.props.language} />
+            )}
+            {features.USE_SEARCH && (
+              <ToolbarButton
+                label="Search"
+                iconKey="search"
+                isActive={this.props.searchShowing}
+                onClick={this.props.actions.toggleSearch}
+              />
             )}
           </TabList>
         </div>
@@ -398,6 +405,7 @@ function mapStateToProps(state) {
     narrative: state.app.associations.narrative,
     sitesShowing: state.app.flags.isShowingSites,
     infoShowing: state.app.flags.isInfopopup,
+    searchShowing: state.app.flags.isSearch,
     coloringSet: state.app.associations.coloringSet,
     maxNumOfColors: state.ui.coloring.maxNumOfColors,
     filterColors: state.ui.coloring.colors,
