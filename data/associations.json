@@ -1,0 +1,205 @@
+[
+  {
+    "id": "asc1",
+    "title": "Military",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Type of area affected", "Military"]
+  },
+  {
+    "id": "asc2",
+    "title": "Undefined",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Type of area affected", "Undefined"]
+  },
+  {
+    "id": "asc3",
+    "title": "Residential",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Type of area affected", "Residential"]
+  },
+  {
+    "id": "asc4",
+    "title": "Administrative",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Type of area affected", "Administrative"]
+  },
+  {
+    "id": "asc5",
+    "title": "Ballistic missile",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Weapon System", "Ballistic missile"]
+  },
+  {
+    "id": "asc6",
+    "title": "Industrial",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Type of area affected", "Industrial"]
+  },
+  {
+    "id": "asc7",
+    "title": "Commercial",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Type of area affected", "Commercial"]
+  },
+  {
+    "id": "asc8",
+    "title": "Humanitarian",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Type of area affected", "Humanitarian"]
+  },
+  {
+    "id": "asc9",
+    "title": "Unknown",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Weapon System", "Unknown"]
+  },
+  {
+    "id": "asc10",
+    "title": "Air strike",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Weapon System", "Air strike"]
+  },
+  {
+    "id": "asc11",
+    "title": "School or childcare",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Type of area affected", "School or childcare"]
+  },
+  {
+    "id": "asc12",
+    "title": "Cultural",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Type of area affected", "Cultural"]
+  },
+  {
+    "id": "asc13",
+    "title": "Roads/Highways/Transport",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Type of area affected", "Roads/Highways/Transport"]
+  },
+  {
+    "id": "asc14",
+    "title": "Loitering munition",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Weapon System", "Loitering munition"]
+  },
+  {
+    "id": "asc15",
+    "title": "Healthcare",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Type of area affected", "Healthcare"]
+  },
+  {
+    "id": "asc16",
+    "title": "Food/Food Infrastructure",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Type of area affected", "Food/Food Infrastructure"]
+  },
+  {
+    "id": "asc17",
+    "title": "Religious",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Type of area affected", "Religious"]
+  },
+  {
+    "id": "asc18",
+    "title": "HE tube artillery",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Weapon System", "HE tube artillery"]
+  },
+  {
+    "id": "asc19",
+    "title": "HE artillery inc mortars",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Weapon System", "HE artillery inc mortars"]
+  },
+  {
+    "id": "asc20",
+    "title": "Anti-air missile",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Weapon System", "Anti-air missile"]
+  },
+  {
+    "id": "asc21",
+    "title": "HE rocket artillery",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Weapon System", "HE rocket artillery"]
+  },
+  {
+    "id": "asc22",
+    "title": "Cluster munitions",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Weapon System", "Cluster munitions"]
+  },
+  {
+    "id": "asc23",
+    "title": "Cruise missile",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Weapon System", "Cruise missile"]
+  },
+  {
+    "id": "asc24",
+    "title": "Thermobaric munition",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Weapon System", "Thermobaric munition"]
+  },
+  {
+    "id": "asc25",
+    "title": "Vehicle mounted weapon",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Weapon System", "Vehicle mounted weapon"]
+  },
+  {
+    "id": "asc26",
+    "title": "Incendiary munitions",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Weapon System", "Incendiary munitions"]
+  },
+  {
+    "id": "asc27",
+    "title": "Land mines",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Weapon System", "Land mines"]
+  },
+  {
+    "id": "asc28",
+    "title": "Small arms",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Weapon System", "Small arms"]
+  },
+  {
+    "id": "asc29",
+    "title": "None",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": ["Weapon System", "None"]
+  }
+]

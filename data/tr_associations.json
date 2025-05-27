@@ -1,0 +1,86 @@
+[
+  {
+    "id": "tr_asc1",
+    "title": "Police Brutality",
+    "mode": "FILTER",
+    "desc": "Incidents of excessive force by police",
+    "filter_paths": ["Type of Violation", "Police Brutality"]
+  },
+  {
+    "id": "tr_asc2",
+    "title": "Unjust Court Verdicts",
+    "mode": "FILTER",
+    "desc": "Legal decisions that violate justice principles",
+    "filter_paths": ["Type of Violation", "Unjust Court Verdicts"]
+  },
+  {
+    "id": "tr_asc3",
+    "title": "Media Censorship",
+    "mode": "FILTER",
+    "desc": "Suppression of media and information",
+    "filter_paths": ["Type of Violation", "Media Censorship"]
+  },
+  {
+    "id": "tr_asc4",
+    "title": "Suppression of Protests",
+    "mode": "FILTER",
+    "desc": "Actions against peaceful assembly",
+    "filter_paths": ["Type of Violation", "Suppression of Protests"]
+  },
+  {
+    "id": "tr_asc5",
+    "title": "Government Oppression",
+    "mode": "FILTER",
+    "desc": "Incidents of state-sanctioned oppression",
+    "filter_paths": ["Type of Violation", "Government Oppression"]
+  },
+  {
+    "id": "tr_asc6",
+    "title": "Human Rights Violations",
+    "mode": "FILTER",
+    "desc": "Violations of basic human rights",
+    "filter_paths": ["Type of Violation", "Human Rights Violations"]
+  },
+  {
+    "id": "tr_asc7",
+    "title": "Other",
+    "mode": "FILTER",
+    "desc": "Other relevant incidents",
+    "filter_paths": ["Type of Violation", "Other"]
+  },
+  {
+    "id": "tr_asc8",
+    "title": "Istanbul",
+    "mode": "FILTER",
+    "desc": "Incidents in Istanbul",
+    "filter_paths": ["Location", "Istanbul"]
+  },
+  {
+    "id": "tr_asc9",
+    "title": "Ankara",
+    "mode": "FILTER",
+    "desc": "Incidents in Ankara",
+    "filter_paths": ["Location", "Ankara"]
+  },
+  {
+    "id": "tr_asc10",
+    "title": "Izmir",
+    "mode": "FILTER",
+    "desc": "Incidents in Izmir",
+    "filter_paths": ["Location", "Izmir"]
+  },
+  {
+    "id": "tr_asc11",
+    "title": "Other Cities",
+    "mode": "FILTER",
+    "desc": "Incidents in other Turkish cities",
+    "filter_paths": ["Location", "Other Cities"]
+  },
+  {
+    "id": "tr_asc12",
+    "title": "Nationwide",
+    "mode": "FILTER",
+    "desc": "Nationwide incidents",
+    "filter_paths": ["Location", "Nationwide"]
+  }
+]
