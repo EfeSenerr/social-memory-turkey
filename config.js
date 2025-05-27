@@ -1,13 +1,12 @@
 const one_day = 1440;
 
-const config = {
-  title: "turkey",
+const config = {  title: "turkey",
   display_title: "Social Memory\nTurkey",
-  SERVER_ROOT: ".", // TODO: Update with actual data source when available
-  EVENTS_EXT: "/data/tr_events.json", // TODO: Update with actual data source when available
-  SOURCES_EXT: "/data/tr_sources.json", // TODO: Update with actual data source when available
-  ASSOCIATIONS_EXT: "/data/tr_associations.json", // TODO: Update with actual data source when available
-  API_DATA: "/data/tr_api.json", // TODO: Update with actual data API endpoint when available
+  SERVER_ROOT: "https://stgsuhn5s3.blob.core.windows.net", 
+  EVENTS_EXT: "/data/tr_events.json", 
+  SOURCES_EXT: "/data/tr_sources.json", 
+  ASSOCIATIONS_EXT: "/data/tr_associations.json", 
+  API_DATA: "/data/tr_api.json",
   MAPBOX_TOKEN:
     "pk.eyJ1IjoiYmVsbGluZ2NhdC1tYXBib3giLCJhIjoiY2tleW0wbWliMDA1cTJ5bzdkbTRraHgwZSJ9.GJQkjPzj8554VhR5SPsfJg",
   // MEDIA_EXT: "/api/media",
