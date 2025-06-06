@@ -11,7 +11,9 @@ import { isTimeRangedIn } from "./helpers";
 import { ASSOCIATION_MODES, SHAPE } from "../common/constants";
 
 // Input selectors
+export const getDomain = (state) => state.domain;
 export const getEvents = (state) => state.domain.events;
+export const getAssociations = (state) => state.domain.associations;
 export const getCategories = (state) =>
   state.domain.associations.filter(
     (item) => item.mode === ASSOCIATION_MODES.CATEGORY

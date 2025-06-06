@@ -405,3 +405,8 @@
     }
   }
 }
+
+// Override z-index when data table is visible to ensure timeline stays on top
+body.data-table-visible .timeline-wrapper {
+  z-index: 1005 !important;
+}

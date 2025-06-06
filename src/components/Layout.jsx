@@ -20,13 +20,16 @@ import Space from "./space/Space";
 import Search from "./controls/Search";
 import CardStack from "./controls/CardStack";
 import NarrativeControls from "./controls/NarrativeControls";
+import DataTable from "./DataTable";
 
 import colors from "../common/global";
 import { binarySearch, insetSourceFrom } from "../common/utilities";
 
 class Dashboard extends Component {
   constructor(props) {
-    super(props);
+    super(props);    this.state = {
+      isDataTableVisible: true
+    };
 
     this.handleViewSource = this.handleViewSource.bind(this);
     this.handleHighlight = this.handleHighlight.bind(this);
@@ -37,8 +40,8 @@ class Dashboard extends Component {
     this.findEventIdx = this.findEventIdx.bind(this);
     this.onKeyDown = this.onKeyDown.bind(this);
     this.selectNarrativeStep = this.selectNarrativeStep.bind(this);
+    this.toggleDataTable = this.toggleDataTable.bind(this);
   }
-
   componentDidMount() {
     this.props.actions.fetchDomain().then((domain) => {
       this.props.actions.updateDomain({
@@ -51,6 +54,11 @@ class Dashboard extends Component {
     // NOTE: hack to get the timeline to always show. Not entirely sure why
     // this is necessary.
     window.dispatchEvent(new Event("resize"));
+    
+    // Set initial body class since data table is visible by default
+    if (this.state.isDataTableVisible) {
+      document.body.classList.add('data-table-visible');
+    }
   }
 
   handleHighlight(highlighted) {
@@ -59,6 +67,10 @@ class Dashboard extends Component {
 
   handleViewSource(source) {
     this.props.actions.updateSource(source);
+  }
+
+  toggleDataTable() {
+    this.setState({ isDataTableVisible: !this.state.isDataTableVisible });
   }
 
   findEventIdx(theEvent) {
@@ -277,18 +289,17 @@ class Dashboard extends Component {
       return null;
     }
   }
-
   render() {
     const { actions, app, domain, timeline, features } = this.props;
 
     const popupStyles = {};
 
     return (
-      <div>
-        {
-          <Toolbar
+      <div className="main-layout">
+        {          <Toolbar
             isNarrative={!!app.associations.narrative}
             domain={domain}
+            isDataTableVisible={this.state.isDataTableVisible}
             methods={{
               onTitle: actions.toggleCover,
               onSelectFilter: (filters) =>
@@ -297,6 +308,7 @@ class Dashboard extends Component {
                 actions.toggleAssociations("categories", categories),
               onShapeFilter: actions.toggleShapes,
               onSelectNarrative: this.setNarrative,
+              onToggleDataTable: this.toggleDataTable,
             }}
           />
         }
@@ -321,8 +333,8 @@ class Dashboard extends Component {
               onUpdateTimerange: actions.updateTimeRange,
               getCategoryColor: this.getCategoryColor,
             }}
-          />
-        }
+          />        }
+        <DataTable isVisible={this.state.isDataTableVisible} onToggle={this.toggleDataTable} />
         <CardStack
           timelineDims={timeline.dimensions}
           onViewSource={this.handleViewSource}

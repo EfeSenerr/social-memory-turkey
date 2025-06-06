@@ -335,8 +335,7 @@ class Toolbar extends Component {
                   panels.download.icon
                 )
               : null}            {features.USE_FULLSCREEN && (
-              <FullscreenToggle language={this.props.language} />
-            )}
+              <FullscreenToggle language={this.props.language} />            )}
             {features.USE_SEARCH && (
               <ToolbarButton
                 label="Search"
@@ -344,7 +343,12 @@ class Toolbar extends Component {
                 isActive={this.props.searchShowing}
                 onClick={this.props.actions.toggleSearch}
               />
-            )}
+            )}            <ToolbarButton
+              label="Show All Data"
+              iconKey="table_chart"
+              isActive={this.props.isDataTableVisible}
+              onClick={this.props.methods.onToggleDataTable}
+            />
           </TabList>
         </div>
         <BottomActions
