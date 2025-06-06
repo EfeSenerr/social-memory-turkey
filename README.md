@@ -1,25 +1,19 @@
 <h1 align="center">Social Memory Turkey</h1>
 
 <h2 align="center">
-	A platform for documenting major events, government actions, and civic issues in Turkey
+		A platform for documenting autheritarianism, oppresion, corruption, injustice,  police violance, and other civic issues in Turkey
 </h2>
 
-<p align="center">
-<strong>
-	TimeMap is a tool for exploration, monitoring and classification of incidents in time and space, originally forked from <a href="https://github.com/forensic-architecture/timemap">forensic-architecture/timemap</a>.
-</strong>
-</p>
-<br>
-<br>
+TimeMap is a tool for exploration, monitoring and classification of incidents in time and space, originally forked from <a href="https://github.com/bellingcat/ukraine-timemap">bellingcat/ukraine-timemap</a>, which was forked from <a href="https://github.com/forensic-architecture/timemap">forensic-architecture/timemap</a>.
 
 <!-- TODO: Replace this with a Turkey-specific screenshot once available 
 The current image shows a mock-up based on the original template
 -->
-![TimeMap preview](docs/example-timemap.png)
+![Imamoglu](public/images/imamoglu.png)
 
 ## Project Description
 
-Social Memory Turkey is an interactive platform for chronicling and visualizing major events, government actions, injustices, and civic issues in Turkey. It serves as both a historical record and advocacy tool, documenting incidents in categories including:
+Social Memory Turkey is an interactive platform for chronicling and visualizing events about autheritarianism, oppresion, corruption, injustice,  police violance, and other civic issues in Turkey. It serves as both a historical record and advocacy tool, documenting incidents in categories including:
 
 - Government oppression
 - Police brutality
@@ -67,3 +61,7 @@ Easiest way to deploy the static files is through
 * copy the files to your server, for example to `/var/www/html`
 
 </details>
+
+---
+
+![Tanal](public/images/tanal.png)
