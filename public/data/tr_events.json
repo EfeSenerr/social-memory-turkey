@@ -11,7 +11,8 @@
     "associations": ["tr_asc1"],
     "time": "14:30",
     "responsible_party": "Istanbul Police Department",
-    "impact": "Multiple injuries, 15 detained"
+    "impact": "Multiple injuries, 15 detained",
+    "images": ["events/TR_001/photo1.png"]
   },
   {
     "sources": ["tr_src3", "tr_src4", "tr_src5"],

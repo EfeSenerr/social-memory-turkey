@@ -21,3 +21,19 @@ src/assets/fonts
 tags
 
 infra/
+
+# Allow GitHub workflows and issue templates for the pipeline
+!.github/workflows/
+!.github/ISSUE_TEMPLATE/
+
+scripts/
+
+# Keep local data files as staging/testing only - Azure Blob is the real database
+public/data/*.json
+public/data/backup_*/
+public/data/ukraine_data/
+
+docker/
+
+test.html
+test.py

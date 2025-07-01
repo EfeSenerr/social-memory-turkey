@@ -1,86 +1,74 @@
-[
-  {
+{
+  "tr_asc1": {
     "id": "tr_asc1",
     "title": "Police Brutality",
-    "mode": "FILTER",
-    "desc": "Incidents of excessive force by police",
-    "filter_paths": ["Type of Violation", "Police Brutality"]
+    "description": "Incidents of excessive force by police",
+    "mode": "DEFAULT"
   },
-  {
+  "tr_asc2": {
     "id": "tr_asc2",
     "title": "Unjust Court Verdicts",
-    "mode": "FILTER",
-    "desc": "Legal decisions that violate justice principles",
-    "filter_paths": ["Type of Violation", "Unjust Court Verdicts"]
+    "description": "Legal decisions that violate justice principles",
+    "mode": "DEFAULT"
   },
-  {
+  "tr_asc3": {
     "id": "tr_asc3",
     "title": "Media Censorship",
-    "mode": "FILTER",
-    "desc": "Suppression of media and information",
-    "filter_paths": ["Type of Violation", "Media Censorship"]
+    "description": "Suppression of media and information",
+    "mode": "DEFAULT"
   },
-  {
+  "tr_asc4": {
     "id": "tr_asc4",
     "title": "Suppression of Protests",
-    "mode": "FILTER",
-    "desc": "Actions against peaceful assembly",
-    "filter_paths": ["Type of Violation", "Suppression of Protests"]
+    "description": "Actions against peaceful assembly",
+    "mode": "DEFAULT"
   },
-  {
+  "tr_asc5": {
     "id": "tr_asc5",
     "title": "Government Oppression",
-    "mode": "FILTER",
-    "desc": "Incidents of state-sanctioned oppression",
-    "filter_paths": ["Type of Violation", "Government Oppression"]
+    "description": "Incidents of state-sanctioned oppression",
+    "mode": "DEFAULT"
   },
-  {
+  "tr_asc6": {
     "id": "tr_asc6",
     "title": "Human Rights Violations",
-    "mode": "FILTER",
-    "desc": "Violations of basic human rights",
-    "filter_paths": ["Type of Violation", "Human Rights Violations"]
+    "description": "Violations of basic human rights",
+    "mode": "DEFAULT"
   },
-  {
+  "tr_asc7": {
     "id": "tr_asc7",
     "title": "Other",
-    "mode": "FILTER",
-    "desc": "Other relevant incidents",
-    "filter_paths": ["Type of Violation", "Other"]
+    "description": "Other relevant incidents",
+    "mode": "DEFAULT"
   },
-  {
+  "tr_asc8": {
     "id": "tr_asc8",
     "title": "Istanbul",
-    "mode": "FILTER",
-    "desc": "Incidents in Istanbul",
-    "filter_paths": ["Location", "Istanbul"]
+    "description": "Incidents in Istanbul",
+    "mode": "DEFAULT"
   },
-  {
+  "tr_asc9": {
     "id": "tr_asc9",
     "title": "Ankara",
-    "mode": "FILTER",
-    "desc": "Incidents in Ankara",
-    "filter_paths": ["Location", "Ankara"]
+    "description": "Incidents in Ankara",
+    "mode": "DEFAULT"
   },
-  {
+  "tr_asc10": {
     "id": "tr_asc10",
     "title": "Izmir",
-    "mode": "FILTER",
-    "desc": "Incidents in Izmir",
-    "filter_paths": ["Location", "Izmir"]
+    "description": "Incidents in Izmir",
+    "mode": "DEFAULT"
   },
-  {
+  "tr_asc11": {
     "id": "tr_asc11",
     "title": "Other Cities",
-    "mode": "FILTER",
-    "desc": "Incidents in other Turkish cities",
-    "filter_paths": ["Location", "Other Cities"]
+    "description": "Incidents in other Turkish cities",
+    "mode": "DEFAULT"
   },
-  {
+  "tr_asc12": {
     "id": "tr_asc12",
     "title": "Nationwide",
-    "mode": "FILTER",
-    "desc": "Nationwide incidents",
-    "filter_paths": ["Location", "Nationwide"]
+    "description": "Nationwide incidents",
+    "mode": "DEFAULT"
   }
-]
+}

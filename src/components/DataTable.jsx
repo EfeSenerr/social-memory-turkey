@@ -352,8 +352,77 @@ class DataTable extends Component {
                             {event.time && <p><strong>Time:</strong> {event.time}</p>}
                             {event.responsible_party && (
                               <p><strong>Responsible Party:</strong> {event.responsible_party}</p>
+                            )}                            {event.impact && <p><strong>Impact:</strong> {event.impact}</p>}
+                            
+                            {/* Event Images */}
+                            {event.images && event.images.length > 0 && (
+                              <div className="event-images">
+                                <strong>Images:</strong>
+                                <div className="image-gallery">
+                                  {event.images.map((imagePath, index) => (
+                                    <div key={index} className="image-item">
+                                      <img 
+                                        src={`/social-memory-turkey/images/${imagePath}`}
+                                        alt={`Event ${event.id} - Image ${index + 1}`}
+                                        className="event-image"
+                                        onError={(e) => {
+                                          e.target.style.display = 'none';
+                                        }}
+                                      />
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
                             )}
-                            {event.impact && <p><strong>Impact:</strong> {event.impact}</p>}
+                            
+                            {/* Event Media (more detailed structure) */}
+                            {event.media && event.media.length > 0 && (
+                              <div className="event-media">
+                                <strong>Media:</strong>
+                                <div className="media-gallery">
+                                  {event.media.map((mediaItem, index) => (
+                                    <div key={index} className="media-item">
+                                      {mediaItem.type === 'image' && (
+                                        <div className="image-container">
+                                          <img 
+                                            src={`/social-memory-turkey/images/${mediaItem.url}`}
+                                            alt={mediaItem.caption || `Event ${event.id} - Media ${index + 1}`}
+                                            className="event-image"
+                                            onError={(e) => {
+                                              e.target.style.display = 'none';
+                                            }}
+                                          />
+                                          {mediaItem.caption && (
+                                            <div className="media-caption">{mediaItem.caption}</div>
+                                          )}
+                                          {mediaItem.credit && (
+                                            <div className="media-credit">Credit: {mediaItem.credit}</div>
+                                          )}
+                                        </div>
+                                      )}
+                                      {mediaItem.type === 'video' && (
+                                        <div className="video-container">
+                                          <video 
+                                            controls 
+                                            className="event-video"
+                                            onError={(e) => {
+                                              e.target.style.display = 'none';
+                                            }}
+                                          >
+                                            <source src={`/social-memory-turkey/images/${mediaItem.url}`} />
+                                            Your browser does not support the video tag.
+                                          </video>
+                                          {mediaItem.caption && (
+                                            <div className="media-caption">{mediaItem.caption}</div>
+                                          )}
+                                        </div>
+                                      )}
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+                            )}
+                            
                             {eventSources.length > 0 && (
                               <div className="sources-detail">
                                 <strong>Sources:</strong>

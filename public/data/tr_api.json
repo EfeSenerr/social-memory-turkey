@@ -1,169 +1,420 @@
-[
-  {
-    "violation_type": ["Police Brutality"],
-    "location_type": ["Istanbul"],
-    "sources": [
-      "https://twitter.com/example/status/123456789",
-      "https://www.example-news.com/taksim-protest-police-violence"
-    ],
-    "id": "TR_001",
-    "description": "Police intervention during peaceful protest in Taksim Square using excessive force against demonstrators.",
-    "date": "2024-06-01",
-    "location": "Taksim Square, Istanbul",
-    "latitude": 41.0369,
-    "longitude": 28.9850,
-    "graphic": false,
-    "responsible_party": "Istanbul Police Department",
-    "impact": "Multiple injuries, 15 detained"
+{
+  "events": [
+    {
+      "sources": [
+        "tr_src1",
+        "tr_src2"
+      ],
+      "id": "TR_001",
+      "description": "Police intervention during peaceful protest in Taksim Square using excessive force against demonstrators.",
+      "date": "06/01/2024",
+      "location": "Taksim Square, Istanbul",
+      "latitude": "41.0369",
+      "longitude": "28.9850",
+      "graphic": "FALSE",
+      "associations": [
+        "tr_asc1"
+      ],
+      "time": "14:30",
+      "responsible_party": "Istanbul Police Department",
+      "impact": "Multiple injuries, 15 detained",
+      "images": [
+        "events/TR_001/photo1.png"
+      ]
+    },
+    {
+      "sources": [
+        "tr_src3",
+        "tr_src4",
+        "tr_src5"
+      ],
+      "id": "TR_002",
+      "description": "Court sentences journalist to prison for reporting on government corruption allegations.",
+      "date": "05/15/2024",
+      "location": "Istanbul Courthouse",
+      "latitude": "41.0082",
+      "longitude": "28.9784",
+      "graphic": "FALSE",
+      "associations": [
+        "tr_asc2"
+      ],
+      "time": "10:00",
+      "responsible_party": "Istanbul Heavy Penal Court",
+      "impact": "2-year prison sentence, press freedom concerns"
+    },
+    {
+      "sources": [
+        "tr_src6"
+      ],
+      "id": "TR_003",
+      "description": "Social media platform access blocked following government directive.",
+      "date": "04/20/2024",
+      "location": "Nationwide",
+      "latitude": "39.9334",
+      "longitude": "32.8597",
+      "graphic": "FALSE",
+      "associations": [
+        "tr_asc3"
+      ],
+      "time": "09:00",
+      "responsible_party": "Information and Communication Technologies Authority (BTK)",
+      "impact": "Nationwide access restriction affecting millions"
+    },
+    {
+      "sources": [
+        "tr_src7",
+        "tr_src8"
+      ],
+      "id": "TR_004",
+      "description": "University students detained during peaceful demonstration for academic freedom.",
+      "date": "03/08/2024",
+      "location": "Boğaziçi University, Istanbul",
+      "latitude": "41.0863",
+      "longitude": "29.0445",
+      "graphic": "FALSE",
+      "associations": [
+        "tr_asc4"
+      ],
+      "time": "12:15",
+      "responsible_party": "Istanbul Police",
+      "impact": "25 students detained, investigation opened"
+    },
+    {
+      "sources": [
+        "tr_src9",
+        "tr_src10"
+      ],
+      "id": "TR_005",
+      "description": "Opposition politician arrested on terrorism charges following critical speech.",
+      "date": "02/12/2024",
+      "location": "Ankara",
+      "latitude": "39.9334",
+      "longitude": "32.8597",
+      "graphic": "FALSE",
+      "associations": [
+        "tr_asc5"
+      ],
+      "time": "06:00",
+      "responsible_party": "Ankara Chief Public Prosecutor's Office",
+      "impact": "Political opposition silenced, international criticism"
+    },
+    {
+      "sources": [
+        "tr_src11"
+      ],
+      "id": "TR_006",
+      "description": "LGBTI+ rights advocacy group's event banned by local authorities.",
+      "date": "01/30/2024",
+      "location": "Izmir",
+      "latitude": "38.4192",
+      "longitude": "27.1287",
+      "graphic": "FALSE",
+      "associations": [
+        "tr_asc6"
+      ],
+      "time": "16:00",
+      "responsible_party": "Izmir Governor's Office",
+      "impact": "Event cancelled, discrimination concerns raised"
+    },
+    {
+      "sources": [
+        "tr_src12",
+        "tr_src13"
+      ],
+      "id": "TR_007",
+      "description": "Lawyer detained while defending clients in politically sensitive case.",
+      "date": "01/15/2024",
+      "location": "Ankara Courthouse",
+      "latitude": "39.9208",
+      "longitude": "32.8541",
+      "graphic": "FALSE",
+      "associations": [
+        "tr_asc7"
+      ],
+      "time": "11:00",
+      "responsible_party": "Ankara Police",
+      "impact": "Legal profession under pressure, fair trial concerns"
+    },
+    {
+      "sources": [
+        "tr_src14"
+      ],
+      "id": "TR_008",
+      "description": "Environmental activists arrested during protest against mining project.",
+      "date": "12/10/2023",
+      "location": "Artvin",
+      "latitude": "41.1828",
+      "longitude": "41.8183",
+      "graphic": "FALSE",
+      "associations": [
+        "tr_asc1"
+      ],
+      "time": "08:30",
+      "responsible_party": "Local Gendarmerie",
+      "impact": "12 activists detained, environmental concerns ignored"
+    },
+    {
+      "sources": [
+        "tr_src15",
+        "tr_src16"
+      ],
+      "id": "TR_009",
+      "description": "Television news program suspended for broadcasting opposition views.",
+      "date": "11/25/2023",
+      "location": "Istanbul (TV Station)",
+      "latitude": "41.0082",
+      "longitude": "28.9784",
+      "graphic": "FALSE",
+      "associations": [
+        "tr_asc3"
+      ],
+      "time": "20:00",
+      "responsible_party": "Radio and Television Supreme Council (RTÜK)",
+      "impact": "Program cancelled, media censorship increased"
+    },
+    {
+      "sources": [
+        "tr_src17"
+      ],
+      "id": "TR_010",
+      "description": "Women's rights demonstration dispersed with tear gas and water cannons.",
+      "date": "11/08/2023",
+      "location": "Kadıköy, Istanbul",
+      "latitude": "40.9833",
+      "longitude": "29.0167",
+      "graphic": "FALSE",
+      "associations": [
+        "tr_asc1"
+      ],
+      "time": "15:45",
+      "responsible_party": "Istanbul Police",
+      "impact": "Several injured, women's rights activism suppressed"
+    }
+  ],
+  "sources": {
+    "tr_srcHidden": {
+      "id": "tr_srcHidden",
+      "paths": [
+        "HIDDEN"
+      ],
+      "title": "-",
+      "description": "Source hidden for security reasons"
+    },
+    "tr_src1": {
+      "id": "tr_src1",
+      "paths": [
+        "https://twitter.com/example/status/123456789"
+      ],
+      "title": "TR_001",
+      "description": "Video footage of police intervention at Taksim Square protest"
+    },
+    "tr_src2": {
+      "id": "tr_src2",
+      "paths": [
+        "https://www.example-news.com/taksim-protest-police-violence"
+      ],
+      "title": "TR_001",
+      "description": "News report on excessive force during peaceful demonstration"
+    },
+    "tr_src3": {
+      "id": "tr_src3",
+      "paths": [
+        "https://www.gazeteduvar.com.tr/journalist-sentenced"
+      ],
+      "title": "TR_002",
+      "description": "Court verdict against journalist for corruption reporting"
+    },
+    "tr_src4": {
+      "id": "tr_src4",
+      "paths": [
+        "https://bianet.org/english/freedom-of-expression/journalist-trial"
+      ],
+      "title": "TR_002",
+      "description": "Press freedom organization report on journalist sentencing"
+    },
+    "tr_src5": {
+      "id": "tr_src5",
+      "paths": [
+        "https://twitter.com/pressfreedom_tr/status/987654321"
+      ],
+      "title": "TR_002",
+      "description": "Social media post documenting court decision"
+    },
+    "tr_src6": {
+      "id": "tr_src6",
+      "paths": [
+        "https://www.hurriyet.com.tr/social-media-blocked"
+      ],
+      "title": "TR_003",
+      "description": "Official announcement of social media platform restriction"
+    },
+    "tr_src7": {
+      "id": "tr_src7",
+      "paths": [
+        "https://twitter.com/bogazici_univ/status/567890123"
+      ],
+      "title": "TR_004",
+      "description": "University students' documentation of detention during protest"
+    },
+    "tr_src8": {
+      "id": "tr_src8",
+      "paths": [
+        "https://www.cumhuriyet.com.tr/bogazici-students-detained"
+      ],
+      "title": "TR_004",
+      "description": "News coverage of student detentions at Boğaziçi University"
+    },
+    "tr_src9": {
+      "id": "tr_src9",
+      "paths": [
+        "https://www.sozcu.com.tr/opposition-politician-arrested"
+      ],
+      "title": "TR_005",
+      "description": "Report on opposition politician's arrest on terrorism charges"
+    },
+    "tr_src10": {
+      "id": "tr_src10",
+      "paths": [
+        "https://www.dw.com/tr/turkey-opposition-arrest/article"
+      ],
+      "title": "TR_005",
+      "description": "International media coverage of political arrest"
+    },
+    "tr_src11": {
+      "id": "tr_src11",
+      "paths": [
+        "https://kaosgl.org/lgbti-event-banned-izmir"
+      ],
+      "title": "TR_006",
+      "description": "LGBTI+ organization's statement on event ban in Izmir"
+    },
+    "tr_src12": {
+      "id": "tr_src12",
+      "paths": [
+        "https://www.barobirlik.org.tr/lawyer-detained"
+      ],
+      "title": "TR_007",
+      "description": "Bar Association statement on lawyer detention"
+    },
+    "tr_src13": {
+      "id": "tr_src13",
+      "paths": [
+        "https://twitter.com/ankara_baro/status/456789012"
+      ],
+      "title": "TR_007",
+      "description": "Ankara Bar Association's social media post about incident"
+    },
+    "tr_src14": {
+      "id": "tr_src14",
+      "paths": [
+        "https://www.greenpeace.org/turkey/artvin-activists-arrested"
+      ],
+      "title": "TR_008",
+      "description": "Environmental organization's report on activist arrests"
+    },
+    "tr_src15": {
+      "id": "tr_src15",
+      "paths": [
+        "https://www.medyascope.tv/program-suspended"
+      ],
+      "title": "TR_009",
+      "description": "Media organization's report on TV program suspension"
+    },
+    "tr_src16": {
+      "id": "tr_src16",
+      "paths": [
+        "https://twitter.com/rtuk_tr/status/789012345"
+      ],
+      "title": "TR_009",
+      "description": "Official RTÜK announcement of program suspension"
+    },
+    "tr_src17": {
+      "id": "tr_src17",
+      "paths": [
+        "https://www.evrensel.net/women-protest-dispersed"
+      ],
+      "title": "TR_010",
+      "description": "Documentation of police intervention at women's rights demonstration"
+    }
   },
-  {
-    "violation_type": ["Unjust Court Verdicts"],
-    "location_type": ["Istanbul"],
-    "sources": [
-      "https://www.gazeteduvar.com.tr/journalist-sentenced",
-      "https://bianet.org/english/freedom-of-expression/journalist-trial",
-      "https://twitter.com/pressfreedom_tr/status/987654321"
-    ],
-    "id": "TR_002",
-    "description": "Court sentences journalist to prison for reporting on government corruption allegations.",
-    "date": "2024-05-15",
-    "location": "Istanbul Courthouse",
-    "latitude": 41.0082,
-    "longitude": 28.9784,
-    "graphic": false,
-    "responsible_party": "Istanbul Heavy Penal Court",
-    "impact": "2-year prison sentence, press freedom concerns"
+  "associations": {
+    "tr_asc1": {
+      "id": "tr_asc1",
+      "title": "Police Brutality",
+      "description": "Incidents of excessive force by police",
+      "mode": "DEFAULT"
+    },
+    "tr_asc2": {
+      "id": "tr_asc2",
+      "title": "Unjust Court Verdicts",
+      "description": "Legal decisions that violate justice principles",
+      "mode": "DEFAULT"
+    },
+    "tr_asc3": {
+      "id": "tr_asc3",
+      "title": "Media Censorship",
+      "description": "Suppression of media and information",
+      "mode": "DEFAULT"
+    },
+    "tr_asc4": {
+      "id": "tr_asc4",
+      "title": "Suppression of Protests",
+      "description": "Actions against peaceful assembly",
+      "mode": "DEFAULT"
+    },
+    "tr_asc5": {
+      "id": "tr_asc5",
+      "title": "Government Oppression",
+      "description": "Incidents of state-sanctioned oppression",
+      "mode": "DEFAULT"
+    },
+    "tr_asc6": {
+      "id": "tr_asc6",
+      "title": "Human Rights Violations",
+      "description": "Violations of basic human rights",
+      "mode": "DEFAULT"
+    },
+    "tr_asc7": {
+      "id": "tr_asc7",
+      "title": "Other",
+      "description": "Other relevant incidents",
+      "mode": "DEFAULT"
+    },
+    "tr_asc8": {
+      "id": "tr_asc8",
+      "title": "Istanbul",
+      "description": "Incidents in Istanbul",
+      "mode": "DEFAULT"
+    },
+    "tr_asc9": {
+      "id": "tr_asc9",
+      "title": "Ankara",
+      "description": "Incidents in Ankara",
+      "mode": "DEFAULT"
+    },
+    "tr_asc10": {
+      "id": "tr_asc10",
+      "title": "Izmir",
+      "description": "Incidents in Izmir",
+      "mode": "DEFAULT"
+    },
+    "tr_asc11": {
+      "id": "tr_asc11",
+      "title": "Other Cities",
+      "description": "Incidents in other Turkish cities",
+      "mode": "DEFAULT"
+    },
+    "tr_asc12": {
+      "id": "tr_asc12",
+      "title": "Nationwide",
+      "description": "Nationwide incidents",
+      "mode": "DEFAULT"
+    }
   },
-  {
-    "violation_type": ["Media Censorship"],
-    "location_type": ["Nationwide"],
-    "sources": [
-      "https://www.hurriyet.com.tr/social-media-blocked"
-    ],
-    "id": "TR_003",
-    "description": "Social media platform access blocked following government directive.",
-    "date": "2024-04-20",
-    "location": "Nationwide",
-    "latitude": 39.9334,
-    "longitude": 32.8597,
-    "graphic": false,
-    "responsible_party": "Information and Communication Technologies Authority (BTK)",
-    "impact": "Nationwide access restriction affecting millions"
-  },
-  {
-    "violation_type": ["Suppression of Protests"],
-    "location_type": ["Istanbul"],
-    "sources": [
-      "https://twitter.com/bogazici_univ/status/567890123",
-      "https://www.cumhuriyet.com.tr/bogazici-students-detained"
-    ],
-    "id": "TR_004",
-    "description": "University students detained during peaceful demonstration for academic freedom.",
-    "date": "2024-03-08",
-    "location": "Boğaziçi University, Istanbul",
-    "latitude": 41.0863,
-    "longitude": 29.0445,
-    "graphic": false,
-    "responsible_party": "Istanbul Police",
-    "impact": "25 students detained, investigation opened"
-  },
-  {
-    "violation_type": ["Government Oppression"],
-    "location_type": ["Ankara"],
-    "sources": [
-      "https://www.sozcu.com.tr/opposition-politician-arrested",
-      "https://www.dw.com/tr/turkey-opposition-arrest/article"
-    ],
-    "id": "TR_005",
-    "description": "Opposition politician arrested on terrorism charges following critical speech.",
-    "date": "2024-02-12",
-    "location": "Ankara",
-    "latitude": 39.9334,
-    "longitude": 32.8597,
-    "graphic": false,
-    "responsible_party": "Ankara Chief Public Prosecutor's Office",
-    "impact": "Political opposition silenced, international criticism"
-  },
-  {
-    "violation_type": ["Human Rights Violations"],
-    "location_type": ["Izmir"],
-    "sources": [
-      "https://kaosgl.org/lgbti-event-banned-izmir"
-    ],
-    "id": "TR_006",
-    "description": "LGBTI+ rights advocacy group's event banned by local authorities.",
-    "date": "2024-01-30",
-    "location": "Izmir",
-    "latitude": 38.4192,
-    "longitude": 27.1287,
-    "graphic": false,
-    "responsible_party": "Izmir Governor's Office",
-    "impact": "Event cancelled, discrimination concerns raised"
-  },
-  {
-    "violation_type": ["Other"],
-    "location_type": ["Ankara"],
-    "sources": [
-      "https://www.barobirlik.org.tr/lawyer-detained",
-      "https://twitter.com/ankara_baro/status/456789012"
-    ],
-    "id": "TR_007",
-    "description": "Lawyer detained while defending clients in politically sensitive case.",
-    "date": "2024-01-15",
-    "location": "Ankara Courthouse",
-    "latitude": 39.9208,
-    "longitude": 32.8541,
-    "graphic": false,
-    "responsible_party": "Ankara Police",
-    "impact": "Legal profession under pressure, fair trial concerns"
-  },
-  {
-    "violation_type": ["Police Brutality"],
-    "location_type": ["Other Cities"],
-    "sources": [
-      "https://www.greenpeace.org/turkey/artvin-activists-arrested"
-    ],
-    "id": "TR_008",
-    "description": "Environmental activists arrested during protest against mining project.",
-    "date": "2023-12-10",
-    "location": "Artvin",
-    "latitude": 41.1828,
-    "longitude": 41.8183,
-    "graphic": false,
-    "responsible_party": "Local Gendarmerie",
-    "impact": "12 activists detained, environmental concerns ignored"
-  },
-  {
-    "violation_type": ["Media Censorship"],
-    "location_type": ["Istanbul"],
-    "sources": [
-      "https://www.medyascope.tv/program-suspended",
-      "https://twitter.com/rtuk_tr/status/789012345"
-    ],
-    "id": "TR_009",
-    "description": "Television news program suspended for broadcasting opposition views.",
-    "date": "2023-11-25",
-    "location": "Istanbul (TV Station)",
-    "latitude": 41.0082,
-    "longitude": 28.9784,
-    "graphic": false,
-    "responsible_party": "Radio and Television Supreme Council (RTÜK)",
-    "impact": "Program cancelled, media censorship increased"
-  },
-  {
-    "violation_type": ["Police Brutality"],
-    "location_type": ["Istanbul"],
-    "sources": [
-      "https://www.evrensel.net/women-protest-dispersed"
-    ],
-    "id": "TR_010",
-    "description": "Women's rights demonstration dispersed with tear gas and water cannons.",
-    "date": "2023-11-08",
-    "location": "Kadıköy, Istanbul",
-    "latitude": 40.9833,
-    "longitude": 29.0167,
-    "graphic": false,
-    "responsible_party": "Istanbul Police",
-    "impact": "Several injured, women's rights activism suppressed"
+  "metadata": {
+    "lastUpdated": "2025-07-01T13:32:32.004Z",
+    "totalEvents": 10,
+    "totalSources": 18,
+    "totalAssociations": 12
   }
-]
+}
