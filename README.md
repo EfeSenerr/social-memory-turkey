@@ -9,8 +9,6 @@ TimeMap is a tool for exploration, monitoring and classification of incidents in
 <!-- TODO: Replace this with a Turkey-specific screenshot once available 
 The current image shows a mock-up based on the original template
 -->
-![Imamoglu](public/images/imamoglu.png)
-
 ## Project Description
 
 Social Memory Turkey is an interactive platform for chronicling and visualizing events about autheritarianism, oppresion, corruption, injustice,  police violance, and other civic issues in Turkey. It serves as both a historical record and advocacy tool, documenting incidents in categories including:
