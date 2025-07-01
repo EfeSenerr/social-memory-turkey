@@ -7,7 +7,6 @@
 <!-- TODO: Replace this with a Turkey-specific screenshot once available 
 The current image shows a mock-up based on the original template
 -->
-<!-- ![Imamoglu](public/images/imamoglu.png) -->
 
 ## Project Description
 
