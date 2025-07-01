@@ -1,0 +1,65 @@
+name: 🔄 Update Existing Event
+description: Request changes to an existing event in the database
+title: "[UPDATE] "
+labels: ["update-event", "pending-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🔄 Update Existing Event
+        
+        Use this form to request updates to an existing event in the Social Memory Turkey database.
+
+  - type: input
+    id: event-id
+    attributes:
+      label: "Event ID*"
+      description: "The ID of the event to update (e.g., TR_001)"
+      placeholder: "TR_XXX"
+    validations:
+      required: true
+
+  - type: input
+    id: event-title
+    attributes:
+      label: "Current Event Title*"
+      description: "Current title of the event (to help identify it)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: update-type
+    attributes:
+      label: "Type of Update*"
+      options:
+        - Correction of factual error
+        - Additional sources
+        - Updated information
+        - Category change
+        - Location correction
+        - Date/time correction
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: update-description
+    attributes:
+      label: "Description of Changes*"
+      description: "Detailed description of what needs to be updated and why"
+    validations:
+      required: true
+
+  - type: textarea
+    id: new-sources
+    attributes:
+      label: "New Sources (if applicable)"
+      description: "Any new sources to support the update"
+
+  - type: checkboxes
+    id: verification
+    attributes:
+      label: "Verification"
+      options:
+        - label: "I have verified this update with reliable sources"
+          required: true

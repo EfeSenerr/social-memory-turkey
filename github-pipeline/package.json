@@ -1,0 +1,20 @@
+{
+  "name": "social-memory-turkey-github-pipeline",
+  "version": "1.0.0",
+  "description": "GitHub-based pipeline for managing Social Memory Turkey events",
+  "main": "parse-issue.js",
+  "scripts": {
+    "test": "node validate-json.js",
+    "parse": "node parse-issue.js",
+    "process": "node process-event.js",
+    "upload": "node upload-to-azure.js"
+  },
+  "dependencies": {
+    "@azure/storage-blob": "^12.17.0",
+    "joi": "^17.11.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {},
+  "author": "Social Memory Turkey",
+  "license": "MIT"
+}

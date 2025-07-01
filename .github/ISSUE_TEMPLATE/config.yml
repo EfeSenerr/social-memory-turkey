@@ -1,0 +1,14 @@
+name: 🐛 Bug Report
+description: Report a bug or issue with the platform
+title: "[BUG] "
+labels: ["bug"]
+
+name: 💡 Feature Request  
+description: Suggest a new feature or improvement
+title: "[FEATURE] "
+labels: ["enhancement"]
+
+name: ❓ General Question
+description: Ask a question about the project
+title: "[QUESTION] "
+labels: ["question"]

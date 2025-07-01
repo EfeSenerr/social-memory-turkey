@@ -1,0 +1,138 @@
+name: 📝 Add New Event
+description: Submit a new event to be added to the Social Memory Turkey database
+title: "[EVENT] "
+labels: ["new-event", "pending-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📝 Add New Event to Social Memory Turkey
+        
+        Please fill out this form to submit a new event for inclusion in the database.
+        All fields marked with * are required.
+        
+        **Important:** This form creates a public issue. Do not include sensitive personal information.
+
+  - type: input
+    id: event-title
+    attributes:
+      label: "Event Title*"
+      description: "Brief descriptive title for the event"
+      placeholder: "e.g., Police intervention during peaceful protest in Ankara"
+    validations:
+      required: true
+
+  - type: textarea
+    id: event-description
+    attributes:
+      label: "Event Description*"
+      description: "Detailed description of what happened"
+      placeholder: "Provide a comprehensive description of the incident, including context and key details..."
+    validations:
+      required: true
+
+  - type: input
+    id: event-date
+    attributes:
+      label: "Date*"
+      description: "Date when the event occurred (MM/DD/YYYY format)"
+      placeholder: "MM/DD/YYYY"
+    validations:
+      required: true
+
+  - type: input
+    id: event-time
+    attributes:
+      label: "Time"
+      description: "Approximate time when the event occurred (HH:MM format, 24-hour)"
+      placeholder: "14:30"
+
+  - type: input
+    id: event-location
+    attributes:
+      label: "Location*"
+      description: "Specific location where the event occurred"
+      placeholder: "e.g., Taksim Square, Istanbul"
+    validations:
+      required: true
+
+  - type: input
+    id: event-coordinates
+    attributes:
+      label: "Coordinates (Optional)"
+      description: "Latitude, Longitude (if known)"
+      placeholder: "41.0369, 28.9850"
+
+  - type: dropdown
+    id: event-category
+    attributes:
+      label: "Primary Category*"
+      description: "Select the primary category that best describes this event"
+      options:
+        - Government Oppression
+        - Police Brutality
+        - Unjust Court Verdicts
+        - Media Censorship
+        - Suppression of Protests
+        - Human Rights Violations
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: responsible-party
+    attributes:
+      label: "Responsible Party"
+      description: "Entity or organization responsible for the incident"
+      placeholder: "e.g., Istanbul Police Department, Ankara Court"
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: "Impact"
+      description: "Description of the impact or consequences of the event"
+      placeholder: "e.g., Multiple injuries, 15 detained, nationwide concerns raised"
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: "Sources*"
+      description: "Provide reliable sources (URLs, news articles, social media posts, etc.). One per line."
+      placeholder: |
+        https://www.example-news.com/article-url
+        https://twitter.com/account/status/123456789
+        https://www.ngo-report.org/incident-report
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-sources
+    attributes:
+      label: "Additional Context"
+      description: "Any additional information, background context, or related incidents"
+
+  - type: checkboxes
+    id: verification
+    attributes:
+      label: "Verification Checklist"
+      description: "Please confirm the following before submitting"
+      options:
+        - label: "I have verified this information through multiple reliable sources"
+          required: true
+        - label: "I confirm this event relates to social and political issues in Turkey"
+          required: true
+        - label: "I understand this information will be publicly visible"
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        
+        **Next Steps:**
+        1. After submitting this issue, it will be reviewed by maintainers
+        2. Additional verification may be requested
+        3. Once approved, the event will be added to the database
+        4. You'll be notified when the event goes live on the platform
+        
+        Thank you for contributing to Social Memory Turkey! 🇹🇷
